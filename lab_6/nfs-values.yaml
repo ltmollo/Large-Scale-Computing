@@ -1,0 +1,13 @@
+storageClass:
+  create: true
+  defaultClass: true
+  name: nfs-sc
+
+nfs:
+  path: /export
+  mountOptions:
+    - vers=4.1
+    - noatime
+  persistentVolume:
+    enabled: true
+    size: 1Gi
